@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weixun"
+version = "0.1.0"
+description = "微寻微信协议 API 的 Python SDK"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "weixun"}]
+keywords = ["wechat", "wechat-api", "bot", "weixun"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+stream = ["websocket-client>=1.6"]
+
+[project.urls]
+Homepage = "https://weixun.site"
+Repository = "https://github.com/wechat2ipad/weixun-python"

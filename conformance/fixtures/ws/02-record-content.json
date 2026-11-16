@@ -1,0 +1,10 @@
+{
+  "name": "record_content 事件",
+  "description": "大聊天记录补拉完成后推送，不带 message 包装",
+  "input": {
+    "key": "k1", "type": "record_content", "message_id": "123456789",
+    "talker": "wxid_a", "success": true, "content": "<msg>...</msg>",
+    "length": 120, "timestamp": 1789611963
+  },
+  "expect": {"event_type": "record_content", "message_id": "123456789", "success": true, "talker": "wxid_a"}
+}

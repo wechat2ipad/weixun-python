@@ -1,0 +1,6 @@
+{
+  "name": "裸文本控制帧",
+  "description": "客户端发 ping 收 pong、发 sync 收 sync completed，都是裸文本不是 JSON",
+  "input_frames": ["pong", "sync completed", "ping"],
+  "expect": {"should_ignore": true}
+}

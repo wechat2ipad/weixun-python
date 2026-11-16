@@ -1,0 +1,6 @@
+{
+  "name": "单对象返回（非数组）",
+  "description": "SendMergedForwardMessage / MarkAllMessagesAsRead 返回单个对象而非数组",
+  "input": {"toUserName": "wxid_a", "isSendSuccess": true},
+  "expect": {"count": 1, "items": [{"to": "wxid_a", "ok": true}]}
+}

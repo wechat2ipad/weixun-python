@@ -1,0 +1,11 @@
+{
+  "name": "标准成功响应",
+  "description": "最常见的成功形态：Code=200 + Data 是数组",
+  "input": {
+    "Code": 200,
+    "Data": [{"toUSerName": "wxid_a", "textContent": "hi", "isSendSuccess": true}],
+    "Success": true,
+    "Text": ""
+  },
+  "expect": {"ok": true, "code": 200, "data_is_array": true}
+}

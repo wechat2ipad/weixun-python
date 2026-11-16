@@ -1,0 +1,6 @@
+{
+  "name": "Code 是数字字符串",
+  "description": "某些路径把 Code 序列化成字符串 \"200\"",
+  "input": {"Code": "200", "Data": {}, "Success": true},
+  "expect": {"ok": true, "code": 200}
+}

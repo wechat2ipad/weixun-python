@@ -1,0 +1,17 @@
+{
+  "name": "批量发送部分成功",
+  "description": "逐条结果的字段命名不统一：toUSerName(大写S) vs toUserName；成功标志 7 种命名；错误字段有 errMgs 拼写错误",
+  "input": [
+    {"toUSerName": "wxid_a", "textContent": "hi", "isSendSuccess": true},
+    {"toUserName": "wxid_b", "isSendSuccess": false, "errMsg": "发送失败"},
+    {"toUSerName": "wxid_c"}
+  ],
+  "expect": {
+    "count": 3,
+    "items": [
+      {"to": "wxid_a", "ok": true, "error": ""},
+      {"to": "wxid_b", "ok": false, "error": "发送失败"},
+      {"to": "wxid_c", "ok": true, "error": ""}
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "VerifyCode 老接口（Code=0 + Message）",
+  "description": "/login/VerifyCode 返回 Code=0 表示成功，且失败说明字段名是 Message 而不是 Text",
+  "input": {"Code": 0, "Success": true, "Message": "验证成功"},
+  "expect": {"ok": true, "code": 0, "message_text": "验证成功"}
+}

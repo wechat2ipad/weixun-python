@@ -1,0 +1,6 @@
+{
+  "name": "errMgs 拼写错误兼容",
+  "description": "UploadFriendCircleImage 返回的错误字段名拼成了 errMgs",
+  "input": [{"imageId": "x", "errMgs": "上传失败"}],
+  "expect": {"count": 1, "items": [{"ok": false, "error": "上传失败"}]}
+}

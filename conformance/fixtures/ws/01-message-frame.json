@@ -1,0 +1,25 @@
+{
+  "name": "普通消息帧",
+  "description": "真实帧结构：{key, message, type}，内部字符串包在 {str:...}，new_msg_id 是 64 位",
+  "input": {
+    "key": "a1b2c3",
+    "message": {
+      "msg_id": 1751755490,
+      "from_user_name": {"str": "50190590530@chatroom"},
+      "to_user_name": {"str": "wxid_hvoabx1dxaci22"},
+      "msg_type": 1,
+      "content": {"str": "wxid_i43b65hm7dad41:\n12345/1"},
+      "create_time": 1789611963,
+      "new_msg_id": 199344895681685661
+    },
+    "type": "message"
+  },
+  "expect": {
+    "from": "50190590530@chatroom",
+    "to": "wxid_hvoabx1dxaci22",
+    "type": 1,
+    "is_group": true,
+    "new_msg_id": "199344895681685661",
+    "msg_id": 1751755490
+  }
+}

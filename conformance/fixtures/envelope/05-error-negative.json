@@ -1,0 +1,6 @@
+{
+  "name": "负数码（key 无效）",
+  "description": "Code=-2 表示 key 缺失/无效/长连接不存在，HTTP 仍 200",
+  "input": {"Code": -2, "Data": null, "Text": " 该链接不存在！", "Success": false},
+  "expect": {"ok": false, "code": -2, "message_text": " 该链接不存在！", "is_key_invalid": true}
+}

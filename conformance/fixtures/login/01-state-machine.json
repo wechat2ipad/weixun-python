@@ -1,0 +1,11 @@
+{
+  "name": "登录状态机 5 状态",
+  "description": "loginState 的全部取值及终态判定",
+  "cases": [
+    {"loginState": "waiting", "online": false, "terminal": false},
+    {"loginState": "login_processing", "online": false, "terminal": false},
+    {"loginState": "ipad_required", "online": false, "terminal": false},
+    {"loginState": "online", "online": true, "terminal": true},
+    {"loginState": "security_verify_required", "online": false, "terminal": true}
+  ]
+}

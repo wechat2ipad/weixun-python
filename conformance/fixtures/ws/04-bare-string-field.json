@@ -1,0 +1,15 @@
+{
+  "name": "裸字符串字段 + 联系人同步",
+  "description": "msg_source/push_content 是裸字符串（不包 {str}）；msg_type=10000 是联系人同步事件，其 new_msg_id 是伪造值不可用于去重",
+  "input": {
+    "type": "message",
+    "message": {
+      "msg_type": 10000,
+      "push_content": "裸字符串内容",
+      "from_user_name": {"str": "wxid_x"},
+      "to_user_name": {"str": "wxid_y"},
+      "new_msg_id": 1789611963000000000
+    }
+  },
+  "expect": {"type": 10000, "is_contact_sync": true, "push_content": "裸字符串内容"}
+}

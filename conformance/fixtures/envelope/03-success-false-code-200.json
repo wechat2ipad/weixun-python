@@ -1,0 +1,6 @@
+{
+  "name": "Code=200 但 Success=false（关键反例）",
+  "description": "/user/SetProxy 返回 Code=200 但 Success 字段可能缺失或为 false。绝不能单看 Success 判成败。",
+  "input": {"Code": 200, "Data": {}},
+  "expect": {"ok": true, "code": 200, "note": "Success 字段缺失或 false 都不影响，Code 优先"}
+}
